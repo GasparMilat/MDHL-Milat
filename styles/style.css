@@ -1,0 +1,137 @@
+body {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+h1 {
+  font-family: "Comic Neue", italic;
+  font-style: italic;
+  font-size: 55px;
+  margin-bottom: 0px;
+}
+
+ul {
+  float: right;
+  margin-top: -17px;
+}
+
+.btn_home {
+  background-color: rgb(068, 114, 196);
+  padding: 1px 15px 1px 15px;
+  border: solid black 2px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 30%);
+}
+
+.btn_home:active,
+.btn_home:focus {
+  background-color: rgb(112, 173, 071);
+}
+
+.btn_about {
+  background-color: rgb(068, 114, 196);
+  padding: 1px 15px 1px 15px;
+  border: solid black 2px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 30%);
+}
+
+.btn_contact {
+  background-color: rgb(068, 114, 196);
+  padding: 1px 15px 1px 15px;
+  border: solid black 2px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 30%);
+}
+
+#abt {
+  background-color: rgb(112, 173, 071);
+}
+
+#cnt {
+  background-color: rgb(112, 173, 071);
+}
+li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+li > a:hover {
+  background-color: rgb(112, 173, 071);
+}
+
+li > a {
+  font-family: "Comic Neue";
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.home {
+  margin-right: 10px;
+}
+
+.container {
+  background-image: url(../images/design1_image1.jpg);
+  background-size: cover;
+  background-position-y: 20%;
+  min-height: 250px;
+  border: solid 1px;
+  border-bottom: 0px;
+}
+
+.container2 {
+  text-align: center;
+  border: solid 2px;
+}
+
+h2 {
+  margin: 5px;
+  font-family: "Comic Neue";
+  -webkit-text-stroke: 1px;
+}
+
+#img1 {
+  width: 600px;
+  height: 200px;
+}
+
+section {
+  display: inline-block;
+  margin-top: 35px;
+}
+.logo {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.article_home {
+  display: inline-block;
+  margin-left: 100px;
+}
+
+.article_about {
+  display: inline-block;
+  position: absolute;
+  vertical-align: top;
+  padding-right: 225px;
+  margin-left: 70px;
+}
+
+.article_contact {
+  display: inline-block;
+  margin-left: 70px;
+  margin-top: 15px;
+}
+
+h3 {
+  font-family: "Comic Neue";
+  font-size: 20px;
+  -webkit-text-stroke: 0.04em;
+  margin-bottom: 0px;
+}
+
+p {
+  font-family: "Comic Neue";
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0px;
+}
