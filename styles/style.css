@@ -1,6 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  margin-left: 150px;
-  margin-right: 150px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1 {
@@ -10,59 +16,22 @@ h1 {
   margin-bottom: 0px;
 }
 
-ul {
-  float: right;
-  margin-top: -17px;
+.img-outer {
+  overflow: hidden;
+  max-width: 300px;
+  max-height: 300px;
 }
 
-.btn_home {
-  background-color: rgb(068, 114, 196);
-  padding: 1px 15px 1px 15px;
-  border: solid black 2px;
-  box-shadow: 3px 3px rgba(0, 0, 0, 30%);
+.img-inner {
+  position: relative;
 }
 
-.btn_home:active,
-.btn_home:focus {
-  background-color: rgb(112, 173, 071);
+img {
+  transition: 0.5s ease;
 }
 
-.btn_about {
-  background-color: rgb(068, 114, 196);
-  padding: 1px 15px 1px 15px;
-  border: solid black 2px;
-  box-shadow: 3px 3px rgba(0, 0, 0, 30%);
-}
-
-.btn_contact {
-  background-color: rgb(068, 114, 196);
-  padding: 1px 15px 1px 15px;
-  border: solid black 2px;
-  box-shadow: 3px 3px rgba(0, 0, 0, 30%);
-}
-
-#abt {
-  background-color: rgb(112, 173, 071);
-}
-
-#cnt {
-  background-color: rgb(112, 173, 071);
-}
-li {
-  display: inline-block;
-  margin-right: 5px;
-}
-
-li > a:hover {
-  background-color: rgb(112, 173, 071);
-}
-
-li > a {
-  font-family: "Comic Neue";
-  font-weight: 600;
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
+img:hover {
+  transform: scale(1.2);
 }
 
 .home {
@@ -70,17 +39,136 @@ li > a {
 }
 
 .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   background-image: url(../images/design1_image1.jpg);
   background-size: cover;
   background-position-y: 20%;
-  min-height: 250px;
-  border: solid 1px;
+  background-color: #0005;
+  background-blend-mode: darken;
+  width: 100%;
+  height: 100vh;
   border-bottom: 0px;
 }
 
+.container3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.containers_img {
+  width: 100%;
+}
+
+.container_contact h2 {
+  font-family: "Passion One";
+  font-size: 3em;
+  color: #ffe15d;
+  -webkit-text-stroke-color: #f49d1a;
+  -webkit-text-stroke-width: 0.1px;
+  padding-top: 3em;
+  padding-left: 6em;
+}
+.container_contact h2 a {
+  color: #ffe15d;
+  -webkit-text-stroke-color: #f49d1a;
+  -webkit-text-stroke-width: 0.1px;
+  text-decoration: none;
+}
+
+.container_about h2 {
+  font-family: "Passion One";
+  font-size: 3em;
+  padding-top: 3em;
+  padding-left: 7em;
+}
+
+.container_about h2 a {
+  color: #ffe15d;
+  -webkit-text-stroke-color: #f49d1a;
+  -webkit-text-stroke-width: 0.1px;
+  text-decoration: none;
+}
+
+.container_rules h2 {
+  font-family: "Passion One";
+  font-size: 3em;
+  padding-top: 3em;
+  padding-left: 6.5em;
+}
+
+.container_rules h2 a {
+  color: #ffe15d;
+  -webkit-text-stroke-color: #f49d1a;
+  -webkit-text-stroke-width: 0.1px;
+  text-decoration: none;
+}
+
+.container_game_info h2 {
+  font-family: "Passion One";
+  font-size: 3em;
+  color: #ffe15d;
+  -webkit-text-stroke-color: #f49d1a;
+  -webkit-text-stroke-width: 0.1px;
+  padding-top: 3em;
+  padding-left: 6em;
+}
+
+.container_game_info h2 a {
+  color: #ffe15d;
+  -webkit-text-stroke-color: #f49d1a;
+  -webkit-text-stroke-width: 0.1px;
+  text-decoration: none;
+}
+.container_contact {
+  background-image: url(../images/hockey_1.jpg);
+  background-size: cover;
+  background-color: #0005;
+  background-blend-mode: darken;
+  display: flex;
+  height: 50vh;
+  width: 50%;
+}
+
+.container_about {
+  background-image: url(../images/hockey_2.jpg);
+  background-size: cover;
+  background-color: #0005;
+  background-blend-mode: darken;
+  background-position-y: 0%;
+  display: flex;
+  height: 50vh;
+  width: 50%;
+}
+
+.container_rules {
+  background-image: url(../images/design1_image2.jpg);
+  background-size: cover;
+  background-color: #0005;
+  background-blend-mode: darken;
+  display: flex;
+  height: 50vh;
+  width: 50%;
+}
+
+.container_game_info {
+  background-image: url(../images/hockey_3.jpg);
+  background-size: cover;
+  background-color: #0005;
+  background-blend-mode: darken;
+  background-position-y: 50%;
+  display: flex;
+  height: 50vh;
+  width: 50%;
+}
 .container2 {
   text-align: center;
   border: solid 2px;
+}
+
+dd {
+  margin: 30px;
 }
 
 h2 {
@@ -89,15 +177,30 @@ h2 {
   -webkit-text-stroke: 1px;
 }
 
-#img1 {
-  width: 600px;
-  height: 200px;
+nav div a {
+  color: #ffe15d;
+  -webkit-text-stroke-color: #f49d1a;
+  -webkit-text-stroke-width: 0.1px;
+  text-decoration: none;
+}
+
+nav div a h3 {
+  font-family: "Passion One";
+  font-size: 3em;
+}
+
+.index_text {
+  margin-bottom: 50px;
 }
 
 section {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
   margin-top: 35px;
 }
+
 .logo {
   display: inline-block;
   vertical-align: top;
@@ -109,27 +212,91 @@ section {
 }
 
 .article_about {
-  display: inline-block;
-  position: absolute;
+  display: flex;
+  flex-direction: column;
   vertical-align: top;
-  padding-right: 225px;
-  margin-left: 70px;
+  padding-right: 150px;
+  padding-left: 150px;
 }
 
-.article_contact {
-  display: inline-block;
-  margin-left: 70px;
-  margin-top: 15px;
-}
-
-h3 {
-  font-family: "Comic Neue";
-  font-size: 20px;
-  -webkit-text-stroke: 0.04em;
-  margin-bottom: 0px;
+.article_contact p {
+  margin: 50px;
 }
 
 p {
+  font-family: "Comic Neue";
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+footer {
+  min-height: 50px;
+}
+
+table {
+  width: -webkit-fill-available;
+  margin: 0% 10% 5% 10%;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  padding: 15px;
+  background-color: #f49d1a;
+  color: white;
+}
+
+thead th {
+  background-color: #000000;
+}
+tbody th:hover {
+  background-color: #ffe15d;
+}
+tbody td {
+  position: relative;
+}
+
+h4 {
+  text-decoration: underline;
+}
+
+.div_info {
+  margin: 30px;
+}
+
+.div_info h2 {
+  padding-bottom: 20px;
+}
+
+.div_info2 {
+  margin: 50px;
+}
+
+.div_info2 h3 {
+  padding: 20px 20px 20px 0px;
+}
+
+footer {
+  background-color: #000000;
+  text-align: center;
+  font-family: monospace;
+  color: white;
+  padding-top: 1em;
+}
+
+ol li {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 10px 0 10px 20px;
+  text-indent: -1em;
+  font-family: "Comic Neue";
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+dd {
   font-family: "Comic Neue";
   font-size: 20px;
   font-weight: 600;
