@@ -2,278 +2,129 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans";
 }
-body {
+
+header {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-h1 {
-  font-family: "Comic Neue", italic;
-  font-style: italic;
-  font-size: 55px;
-  margin-bottom: 0px;
-}
-
-.img-outer {
-  overflow: hidden;
-  max-width: 300px;
-  max-height: 300px;
-}
-
-.img-inner {
-  position: relative;
-}
-
-img {
-  transition: 0.5s ease;
-}
-
-img:hover {
-  transform: scale(1.2);
-}
-
-.home {
-  margin-right: 10px;
-}
-
-.container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-image: url(../images/design1_image1.jpg);
-  background-size: cover;
-  background-position-y: 20%;
-  background-color: #0005;
-  background-blend-mode: darken;
-  width: 100%;
-  height: 100vh;
-  border-bottom: 0px;
-}
-
-.container3 {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.containers_img {
-  width: 100%;
-}
-
-.navmain {
-  color: #ffe15d;
-  -webkit-text-stroke-color: #f49d1a;
-  -webkit-text-stroke-width: 1px;
-  text-decoration: none;
-  font-family: "Passion One";
-  font-size: 3em;
-}
-
-.container3 div {
-  background-size: cover;
-  background-color: #0005;
-  background-blend-mode: darken;
-  display: flex;
-  height: 50vh;
-  width: 50%;
+  justify-content: space-between;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-}
-.container_contact {
-  background-image: url(../images/hockey_1.jpg);
-}
-
-.container_about {
-  background-image: url(../images/hockey_2.jpg);
+  padding: 40px;
+  padding-right: 10em;
 }
 
-.container_rules {
-  background-image: url(../images/design1_image2.jpg);
+header nav {
+  display: flex;
 }
 
-.container_game_info {
-  background-image: url(../images/hockey_3.jpg);
-}
-.container2 {
-  text-align: center;
-  border: solid 2px;
-}
-
-dd {
-  margin: 30px;
-}
-
-h2 {
-  margin: 5px;
-  font-family: "Comic Neue";
-  -webkit-text-stroke: 1px;
-}
-
-nav div a {
-  color: #ffe15d;
-  -webkit-text-stroke-color: #f49d1a;
-  -webkit-text-stroke-width: 0.1px;
+header nav a {
+  color: white;
+  font-weight: 600;
   text-decoration: none;
+  margin: 0px 20px 0px 20px;
 }
 
-nav div a h3 {
-  font-family: "Passion One";
-  font-size: 3em;
+header nav a:hover {
+  color: #0d0d0d;
 }
 
-.index_text {
-  margin-bottom: 50px;
-}
-
-section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  margin-top: 35px;
-}
-
-.logo {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.article_home {
-  display: inline-block;
-  margin-left: 100px;
-}
-
-.article_about {
-  display: flex;
-  flex-direction: column;
-  vertical-align: top;
-  padding-right: 150px;
-  padding-left: 150px;
-}
-
-.article_contact p {
-  margin: 50px;
-}
-
-p {
-  font-family: "Comic Neue";
-  font-size: 20px;
-  font-weight: 600;
-  margin-top: 0px;
-}
-
-footer {
-  min-height: 50px;
-}
-
-table {
-  width: -webkit-fill-available;
-  margin: 0% 10% 5% 10%;
-  border-collapse: collapse;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-th,
-td {
-  padding: 15px;
-  background-color: #f49d1a;
-  color: white;
-}
-
-thead th {
-  background-color: #000000;
-}
-tbody th:hover {
-  background-color: #ffe15d;
-}
-tbody td {
-  position: relative;
-}
-
-h4 {
-  text-decoration: underline;
-}
-
-.div_info {
-  margin: 30px;
-}
-
-.div_info h2 {
-  padding-bottom: 20px;
-}
-
-.div_info2 {
-  margin: 50px;
-}
-
-.div_info2 h3 {
-  padding: 20px 20px 20px 0px;
-}
-
-footer {
-  background-color: #000000;
-  text-align: center;
-  font-family: monospace;
-  color: white;
-  padding-top: 1em;
-}
-
-ol li {
-  list-style-type: disc;
-  list-style-position: inside;
-  padding: 10px 0 10px 20px;
-  text-indent: -1em;
-  font-family: "Comic Neue";
-  font-size: 20px;
-  font-weight: 600;
-  margin-top: 0px;
-}
-
-dd {
-  font-family: "Comic Neue";
-  font-size: 20px;
-  font-weight: 600;
-  margin-top: 0px;
-}
-
-
-form {
-  display: flex;
-}
-
-fieldset {
+button {
+  border-radius: 20px;
+  border: none;
+  background-color: #bf048d;
   padding: 10px;
 }
 
-form h3 {
-  margin: 15px;
+.btn_nav {
+  margin: 0px 20px 0px 20px;
 }
 
-label {
-  margin: 20px;
+.logo {
+  width: 12em;
+}
+
+.home {
+  color: white;
+  font-size: 25px;
+  width: 100%;
+  padding: 10px;
+  background-color: #999;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
-.registration2 {
+fieldset input {
+  margin: 20px 10px 20px 30px;
+}
+
+.search {
+  margin-left: 40em;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.card {
+  width: 17em;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.card img {
+  max-width: 100%;
+}
+.card .text {
+  padding: 0 20px 20px;
+}
+.card .text > button {
+  background: gray;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+footer {
+  display: flex;
+  background-color: #999;
+}
+
+footer div {
+  padding: 10px;
+}
+footer a {
+  padding: 10px;
+}
+
+footer a img {
+  width: 2em;
+}
+
+footer div h2 {
+  color: white;
+  margin-left: 66rem;
+}
+
+.fieldset_contact {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.map_container {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-}
-.map {
-  padding: 30px;
+  align-items: center;
+  align-content: center;
 }
 
-.submit {
+.message{
   display: flex;
-  justify-content: center;
+}
+
+.textarea{
+  margin-left: 15px;
+}
+
+.footer_contact{
+  margin-top: 12em;
 }

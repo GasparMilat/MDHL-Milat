@@ -4,44 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MDHL</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <title>Document</title>
+    <link
+      rel="icon"
+      type="image/xicon"
+      href="./assets/favicon-AmazingEvents.ico"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header></header>
-    <nav>
-      <div class="container">
-        <a href="index.html"><h3>Home</h3></a>
-        <a href="about.html"><h3>About</h3></a>
-        <a href="contact.html"><h3>Contact</h3></a>
-        <a href="game_info.html"><h3>Game Info</h3></a>
-        <a href="rules.html"><h3>Rules</h3></a>
-        <a href="registration.html"><h3>Registration</h3></a>
-      </div>
-    </nav>
-
+    <header>
+      <img class="logo" src="./assets/Logo Amazing Events.png" alt="" />
+      <nav>
+        <button><a href="index.html">Home</a></button
+        ><button class="btn_nav">
+          <a href="upcoming.html">Upcoming Events</a></button
+        ><button class="btn_nav"><a href="">Past Events</a></button
+        ><button class="btn_nav"><a href="#">Contact</a></button
+        ><button class="btn_nav"><a href="">Stats</a></button>
+      </nav>
+    </header>
+    <div class="home"><h1>Home</h1></div>
     <main>
-      <section>
-        <div class="article_contact">
-          <p>
-            Please email us at
-            <a href="mailto:mdhl@chihockey.org">mdhl@chihockey.org</a>
-          </p>
-          <p>We reply to your email as soon as we can.</p>
-        </div>
-      </section>
+      <form action="">
+        <fieldset class="fieldset_contact">
+          <label
+            >Name:
+            <input type="text" name="name" />
+          </label>
+          <label for=""
+            >Email:
+            <input type="text" name="email" />
+          </label>
+          <label class="message"
+            >Message:
+            <textarea
+              class="textarea"
+              name="message"
+              id=""
+              cols="22"
+              rows="5"
+            ></textarea>
+          </label>
+          <label><input type="submit" value="Submit" /></label>
+        </fieldset>
+      </form>
     </main>
-    <footer>By Gaspar Milat 😎</footer>
+    <footer class="footer_contact">
+      <div>
+        <a href=""><img src="./assets/instagram.png" alt="" /></a
+        ><a href=""><img src="./assets/facebook.png" alt="" /></a
+        ><a href=""><img src="./assets/whatsapp.png" alt="" /></a>
+      </div>
+      <div><h2>FE01-TM Front End</h2></div>
+    </footer>
   </body>
 </html>
