@@ -8,7 +8,7 @@
     <link
       rel="icon"
       type="image/xicon"
-      href="./assets/favicon-AmazingEvents.ico"
+      href="./assets/images/favicon-AmazingEvents.ico"
     />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,14 +20,14 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="./assets/Logo Amazing Events.png" alt="" />
+      <img class="logo" src="./assets/images/Logo Amazing Events.png" alt="" />
       <nav>
         <button><a href="#">Home</a></button
         ><button class="btn_nav">
           <a href="upcoming.html">Upcoming Events</a></button
-        ><button class="btn_nav"><a href="">Past Events</a></button
+        ><button class="btn_nav"><a href="past.html">Past Events</a></button
         ><button class="btn_nav"><a href="contact.html">Contact</a></button
-        ><button class="btn_nav"><a href="">Stats</a></button>
+        ><button class="btn_nav"><a href="stats.html">Stats</a></button>
       </nav>
     </header>
     <div class="home"><h1>Home</h1></div>
@@ -35,85 +35,34 @@
       <div>
         <form action="">
           <fieldset>
-            <input type="checkbox" name="category1" id="" />Category 1<input
+            <input type="checkbox" name="food" id="" />Food<input
               type="checkbox"
-              name="category2"
+              name="museum"
               id=""
-            />Category 2<input type="checkbox" name="category3" id="" />Category
-            3<input type="checkbox" name="category4" id="" />Category 4<input
+            />Museum<input type="checkbox" name="concert" id="" />Race<input
               type="checkbox"
-              name="category5"
+              name="concert"
               id=""
-            />Category 5
-            <label for=""><input class="search" type="text" />🔍</label>
+            />Concert<input type="checkbox" name="books" id="" />Books
+            <input type="checkbox" name="cinema" id="" />Cinema
+            <input type="checkbox" name="party" id="" />Party
+            <label for=""
+              ><input class="search" type="text" id="searchbar" />🔍</label
+            >
           </fieldset>
         </form>
       </div>
-      <div class="cards">
-        <article class="card">
-          <img src="./assets/Cinema.jpg" alt="cinema" />
-          <div class="text">
-            <h3>Seamlessly visualize quality</h3>
-            <p>
-              Collaboratively administrate empowered markets via plug-and-play
-              networks.
-            </p>
-            <button>Here's why</button>
-          </div>
-        </article>
-        <article class="card">
-          <img src="./assets/Costume_Party.jpg" alt="costume_party" />
-          <div class="text">
-            <h3>Completely Synergize</h3>
-            <p>
-              Dramatically engage seamlessly visualize quality intellectual
-              capital without superior collaboration and idea-sharing.
-            </p>
-            <button>Here's how</button>
-          </div>
-        </article>
-        <article class="card">
-          <img src="./assets/Food_Fair.jpg" alt="food_fair" />
-          <div class="text">
-            <h3>Completely Synergize</h3>
-            <p>
-              Dramatically engage seamlessly visualize quality intellectual
-              capital without superior collaboration and idea-sharing.
-            </p>
-            <button>Here's how</button>
-          </div>
-        </article>
-        <article class="card">
-          <img src="/assets/Marathon.jpg" alt="Sample photo" />
-          <div class="text">
-            <h3>Completely Synergize</h3>
-            <p>
-              Dramatically engage seamlessly visualize quality intellectual
-              capital without superior collaboration and idea-sharing.
-            </p>
-            <button>Here's how</button>
-          </div>
-        </article>
-        <article class="card">
-          <img src="/assets/Museum_Tour.jpg" alt="Sample photo" />
-          <div class="text">
-            <h3>Completely Synergize</h3>
-            <p>
-              Dramatically engage seamlessly visualize quality intellectual
-              capital without superior collaboration and idea-sharing.
-            </p>
-            <button>Here's how</button>
-          </div>
-        </article>
-      </div>
+      <div class="cards" id="allcards"></div>
     </main>
     <footer>
       <div>
-        <a href=""><img src="./assets/instagram.png" alt="" /></a
-        ><a href=""><img src="./assets/facebook.png" alt="" /></a
-        ><a href=""><img src="./assets/whatsapp.png" alt="" /></a>
+        <a href=""><img src="./assets/images/instagram.png" alt="" /></a
+        ><a href=""><img src="./assets/images/facebook.png" alt="" /></a
+        ><a href=""><img src="./assets/images/whatsapp.png" alt="" /></a>
       </div>
       <div><h2>FE01-TM Front End</h2></div>
     </footer>
+    <script src="../js/data.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>

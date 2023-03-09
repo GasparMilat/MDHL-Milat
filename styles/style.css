@@ -128,3 +128,37 @@ footer div h2 {
 .footer_contact{
   margin-top: 12em;
 }
+
+.container{
+  width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+table{
+  width: 80%;
+}
+
+h2{
+  width: 80%;
+  background-color: #ccc;
+  font-size: 35px;
+  margin-top: 25px;
+}
+
+td{
+  border: 1px solid black;
+  padding: 5px;
+  height: 30px;
+  width: 500px;
+}
+
+.tr_head{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
