@@ -1,2 +1,2 @@
-# MDHL-Milat
-Task1-Mighty Ducks Hockey League
+# Amazing Events T3-M2
+Amazing-Events
