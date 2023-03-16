@@ -12,7 +12,7 @@ let cards = "";
             <button>Details</button>
             </div>
         </div>`;
-        }
+    }
 cardsContainer.innerHTML = cards
 let ultimateArr = events
 const searchInput = document.getElementById('searchbar')
