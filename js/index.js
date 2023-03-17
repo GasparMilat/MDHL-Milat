@@ -1,3 +1,4 @@
+//Renderiza cards por página 
 const cardsContainer = document.getElementById("allcards")
 let cards = "";
     for (const event of events) {
